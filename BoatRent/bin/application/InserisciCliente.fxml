@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="InserimentoClienti" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="382.0" prefWidth="1063.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InserisciClienteController">
+   <children>
+      <SplitPane layoutY="337.0" prefHeight="45.0" prefWidth="1063.0">
+         <items>
+            <Button fx:id="indietroFromInserisciClienteToCliente" cacheShape="false" centerShape="false" focusTraversable="false" mnemonicParsing="false" onAction="#accediCliente" scaleShape="false" text="&lt;-Indietro" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </items>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </SplitPane>
+      <Label layoutX="369.0" layoutY="32.0" text="INSERIMENTO CLIENTI">
+         <font>
+            <Font name="Bell MT" size="23.0" />
+         </font>
+      </Label>
+      <TextField fx:id="codiceFiscaleCliente" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="173.0" layoutY="131.0" promptText="Scrivere in maiuscolo!" scaleShape="false" />
+      <TextField fx:id="cognomeCliente" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="889.0" layoutY="131.0" scaleShape="false" />
+      <TextField fx:id="nomeCliente" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="501.0" layoutY="131.0" scaleShape="false" />
+      <DatePicker fx:id="dataNascitaCliente" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="152.0" layoutY="275.0" scaleShape="false" />
+      <Button fx:id="inserisciCliente" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="835.0" layoutY="33.0" mnemonicParsing="false" onAction="#accediInserisciCliente" prefHeight="25.0" prefWidth="94.0" scaleShape="false" text="Invia">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label layoutX="25.0" layoutY="135.0" text="Codice Fiscale(String)" />
+      <Label layoutX="396.0" layoutY="135.0" text="Nome (String)" />
+      <Label layoutX="765.0" layoutY="135.0" text="Cognome (String)" />
+      <Label layoutX="50.0" layoutY="279.0" text="DataNascita" />
+      <TextField fx:id="numeroMassimoNoleggi" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="889.0" layoutY="275.0" scaleShape="false" />
+      <Label layoutX="675.0" layoutY="267.0" />
+      <ChoiceBox fx:id="sesso" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="500.0" layoutY="275.0" prefWidth="150.0" scaleShape="false" />
+      <Label layoutX="419.0" layoutY="279.0" text="Sesso" />
+      <Label layoutX="769.0" layoutY="276.0" text="NumMaxBarche" />
+      <Button layoutX="50.0" layoutY="33.0" mnemonicParsing="false" onAction="#mostraClienti" text="Mostra clienti">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+   </children>
+</Pane>

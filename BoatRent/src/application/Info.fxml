@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Bloom?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="354.0" style="-fx-background-color: #9c9c9c;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="143.0" layoutY="21.0" text="VERSIONE 1.0">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="80.0" layoutY="143.0" text="Sviluppato da Alessandro Bevilacqua" />
+   </children>
+   <effect>
+      <Bloom threshold="0.21" />
+   </effect>
+</Pane>

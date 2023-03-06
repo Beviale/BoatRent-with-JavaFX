@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="293.0" prefWidth="485.0" style="-fx-border-color: yellow; -fx-background-color: yellow;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="168.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/fileSaved.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="64.0" layoutY="27.0" text="File generato correttamente!">
+         <font>
+            <Font name="Berlin Sans FB" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

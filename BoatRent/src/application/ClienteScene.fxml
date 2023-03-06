@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="336.0" prefWidth="828.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ClienteSceneController">
+   <children>
+      <SplitPane dividerPositions="0.5" layoutY="291.0" prefHeight="45.0" prefWidth="828.0">
+         <items>
+            <Button fx:id="indieroFromClienteToMain" cacheShape="false" centerShape="false" focusTraversable="false" mnemonicParsing="false" onAction="#accediMain" scaleShape="false" text="&lt;-Indietro" wrapText="true">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="avantiInserimentoCliente" cacheShape="false" centerShape="false" focusTraversable="false" mnemonicParsing="false" onAction="#accediInserisciCliente" prefHeight="26.0" prefWidth="110.0" scaleShape="false" text="Inserisci cliente-&gt;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </items>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </SplitPane>
+      <Label layoutX="257.0" layoutY="28.0" mouseTransparent="true" text="Inserimento noleggi" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font name="Cooper Black" size="31.0" />
+         </font>
+      </Label>
+      <Button fx:id="inserisciBarca" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="759.0" layoutY="256.0" mnemonicParsing="false" onAction="#accediInserisciBarca" scaleShape="false" text="Invia">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <CheckBox fx:id="skipperNoleggio" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="529.0" layoutY="96.0" mnemonicParsing="false" scaleShape="false" text="Skipper" />
+      <ComboBox fx:id="codiceFiscaleCliente" layoutX="176.0" layoutY="92.0" prefWidth="150.0">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Label layoutX="53.0" layoutY="96.0" text="Codice fiscale cliente" />
+      <DatePicker fx:id="dataFineNoleggio" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="484.0" layoutY="230.0" scaleShape="false" />
+      <Label layoutX="92.0" layoutY="234.0" text="Data inizio" />
+      <DatePicker fx:id="dataInizioNoleggio" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="170.0" layoutY="230.0" onAction="#accediDataInizioNoleggio" scaleShape="false" />
+      <Label layoutX="414.0" layoutY="234.0" text="Data fine" />
+      <TextField fx:id="penaleNoleggio" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="497.0" layoutY="157.0" scaleShape="false" />
+      <TextField fx:id="costoNoleggio" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="177.0" layoutY="156.0" scaleShape="false" />
+      <Label layoutX="89.0" layoutY="169.0" text="Costo(float)" />
+      <Label layoutX="404.0" layoutY="160.0" text="Penale(float)" />
+   </children>
+</Pane>

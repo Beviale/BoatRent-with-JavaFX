@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="323.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="61.0" layoutY="55.0" text="Noleggio memorizzato correttamente!">
+         <font>
+            <Font name="System Italic" size="29.0" />
+         </font>
+      </Label>
+      <ImageView id="imageNoleggio" fitHeight="197.0" fitWidth="303.0" layoutX="191.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../bin/noleggioSuccesso.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>

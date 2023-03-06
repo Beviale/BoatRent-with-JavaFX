@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane cacheShape="false" centerShape="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="265.0" prefWidth="486.0" scaleShape="false" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.InserisciBarcaController">
+   <children>
+      <ComboBox fx:id="selezionaBarca" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="58.0" layoutY="173.0" prefWidth="150.0" scaleShape="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Button fx:id="inserisciBarca" layoutX="351.0" layoutY="173.0" mnemonicParsing="false" onAction="#accediInserisciBarca" text="Inserisci">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="inserisciNoleggio" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="224.0" layoutY="214.0" mnemonicParsing="false" onAction="#accediInserisciNoleggio" scaleShape="false" text="Fine">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <ComboBox fx:id="elencoBarcheAggiunte" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="168.0" layoutY="47.0" prefWidth="150.0" promptText="Visualizza" scaleShape="false" />
+      <Label layoutX="150.0" layoutY="14.0" text="Elenco barche aggiunte al noleggio" />
+   </children>
+</Pane>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="495.0" prefWidth="772.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/19" fx:controller="application.MostraClientiSceneController">
+   <content>
+      <TableView fx:id="tableClienti" prefHeight="520.0" prefWidth="791.0">
+        <columns>
+          <TableColumn fx:id="codiceFiscale" prefWidth="228.00000232458115" text="Codice fiscale" />
+          <TableColumn fx:id="nome" prefWidth="154.3999786376953" text="Nome" />
+            <TableColumn fx:id="cognome" prefWidth="121.5999755859375" text="Cognome" />
+            <TableColumn fx:id="dataNascita" prefWidth="153.59994506835938" text="Data nascita" />
+            <TableColumn fx:id="sesso" minWidth="0.0" prefWidth="100.79998779296875" text="Sesso" />
+        </columns>
+      </TableView>
+   </content>
+</ScrollPane>

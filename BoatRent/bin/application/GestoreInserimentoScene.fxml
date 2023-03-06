@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="437.0" prefWidth="1176.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.GestoreInserimentoSceneController">
+   <children>
+      <SplitPane layoutX="-3.0" layoutY="397.0" prefHeight="41.0" prefWidth="1186.0">
+         <items>
+            <Button fx:id="backGestore" cacheShape="false" centerShape="false" focusTraversable="false" mnemonicParsing="false" onAction="#accediGestore" scaleShape="false" text="&lt;-indietro">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </items>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </SplitPane>
+      <Accordion layoutX="159.0" layoutY="91.0" />
+      <BorderPane layoutX="8.0" layoutY="14.0" prefHeight="30.0" prefWidth="173.0" style="-fx-border-color: grey;">
+         <center>
+            <Label text="Inserisci barca" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <BorderPane layoutX="8.0" layoutY="136.0" prefHeight="30.0" prefWidth="173.0" style="-fx-border-color: grey;">
+         <center>
+            <Label text="Inserisci cabina" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <BorderPane layoutX="8.0" layoutY="282.0" prefHeight="30.0" prefWidth="173.0" style="-fx-border-color: grey;">
+         <center>
+            <Label text="Inserisci bagno" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+         </center>
+      </BorderPane>
+      <Button fx:id="inserisciBarca" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="209.0" layoutY="15.0" mnemonicParsing="false" onAction="#accediInserisciBarca" scaleShape="false" text="Invia">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="inserisciCabina" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="209.0" layoutY="137.0" mnemonicParsing="false" onAction="#accediInserisciCabina" scaleShape="false" text="Invia">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="inserisciBagno" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="209.0" layoutY="283.0" mnemonicParsing="false" onAction="#accediInserisciBagno" scaleShape="false" text="Invia">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <TextField fx:id="areaBagno" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="123.0" layoutY="353.0" scaleShape="false" />
+      <TextField fx:id="modelloBagno" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="482.0" layoutY="353.0" scaleShape="false" />
+      <Label layoutX="39.0" layoutY="357.0" text="Area(float)" />
+      <Label layoutX="341.0" layoutY="357.0" text="Modello(String)" />
+      <Label layoutX="39.0" layoutY="246.0" text="Area(float)" />
+      <TextField fx:id="areaCabina" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="123.0" layoutY="242.0" scaleShape="false" />
+      <Label layoutX="38.0" layoutY="77.0" text="NumeroSerie" />
+      <TextField fx:id="codiceBarca" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="19.0" layoutY="99.0" promptText="12 caratteri numerici" scaleShape="false" />
+      <Label layoutX="339.0" layoutY="77.0" text="Marca(String)" />
+      <TextField fx:id="marcaBarca" cacheShape="false" centerShape="false" editable="false" focusTraversable="false" layoutX="311.0" layoutY="100.0" />
+      <Label layoutX="659.0" layoutY="77.0" text="Modello(String)" />
+      <TextField fx:id="modelloBarca" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="629.0" layoutY="99.0" scaleShape="false" />
+      <ComboBox fx:id="codiceCabina" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="647.0" layoutY="16.0" prefWidth="150.0" scaleShape="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <ComboBox fx:id="codiceBagno1" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="960.0" layoutY="16.0" prefWidth="150.0" scaleShape="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Label layoutX="563.0" layoutY="21.0" text="Codice cabina" />
+      <Label layoutX="870.0" layoutY="21.0" text="Codice bagno1" />
+      <Label layoutX="990.0" layoutY="77.0" text="Codice bagno2" />
+      <ComboBox fx:id="codiceBagno2" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="960.0" layoutY="99.0" prefWidth="150.0" scaleShape="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Line endX="1034.0" endY="9.399993896484375" layoutX="142.0" layoutY="127.0" startX="-142.00001525878906" startY="9.399993896484375" />
+      <Line endX="1028.0" endY="9.399993896484375" layoutX="157.0" layoutY="273.0" startX="-157.00001525878906" startY="9.399993896484375" />
+      <Line endX="1028.0" endY="9.399993896484375" layoutX="141.0" layoutY="4.0" startX="-142.00001525878906" startY="9.399993896484375" />
+      <ComboBox fx:id="tipoBarca" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="332.0" layoutY="16.0" onAction="#accediTipoBarca" prefWidth="150.0" scaleShape="false">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <Label layoutX="292.0" layoutY="21.0" text="Tipo" />
+      <Label layoutX="341.0" layoutY="246.0" text="Modello(String)" />
+      <TextField fx:id="modelloCabina" cacheShape="false" centerShape="false" focusTraversable="false" layoutX="482.0" layoutY="242.0" scaleShape="false" />
+   </children>
+</Pane>
